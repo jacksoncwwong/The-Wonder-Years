@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Wonder Years Montessori - Brampton, Ontario</title>
+<meta name="description" content="A comprehensive Montessori School in Brampton, providing preschool, childcare and daycare services. Conveniently located near the Brampton Go station.">
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+</head>
+<body>
+<div id="homeTop"></div>
+<header>
+  <div id="homeBG"> 
+  <div id="cloud1"></div>
+  <div id="cloud2"></div>
+<div id="cloud3"></div>
+  <div id="ball"></div>
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="activePage">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="programs.html">PROGRAMS</a></li>
+        <!--<li><a href="summer.html">SUMMER CAMP</a></li>-->
+        <li><a href="blog/">BLOG</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div id="headline">
+      <h1><span>The Wonder Years</span><br>
+        Montessori</h1>
+    </div>
+  </div>
+</header>
+<section id="homeSection">
+  <article id="homeArticle">
+    <h2>A Child's most formative years are their youngest. From birth to age six. These are 
+      'The Wonder Years'. </h2>
+    <h3>Ninety percent of the child's intellect, personality and social skills are developed by age six. Children under six absorb information effortlessly, merely by living and interacting in everyday ways. Children are naturally drawn to the things needed to help them to reach their fullest potentials. The Wonder Years develops these tendencies in young children, offering an array of real life scenarios in child-sized versions.</h3>
+    <div class="imgRotatorHome"> 
+    <a href="_images/pictures/Language-Book_Reading_high.jpg" data-lightbox="image-1" class="imgLeft" id="Rot1"></a> 
+    <a href="_images/pictures/schoolpicture_high.jpg" data-lightbox="image-2" class="imgCenter" id="Rot2"></a> 
+    <a href="_images/pictures/Culture-Drawing_with_Crayons_and_Markers_high.jpg" data-lightbox="image-3" class="imgRight" id="Rot3"></a> 
+    <a href="_images/pictures/Practical_Life-Snap_Frame_high.jpg" data-lightbox="image-4" class="imgStandby" id="Rot4"></a> 
+    <a href="_images/pictures/Culture-Drawing_with_Crayons_high.jpg" data-lightbox="image-5" class="imgStandby" id="Rot5"></a> 
+    <a href="_images/pictures/Practical_Life-Color_Sorting_high.jpg" data-lightbox="image-6" class="imgStandby" id="Rot6"></a> 
+    <a href="_images/pictures/Practical_Life-Beads_high.jpg" data-lightbox="image-7" class="imgStandby" id="Rot7"></a> 
+    <a href="_images/pictures/Sensorial-Pink_Tower_high.jpg" data-lightbox="image-8" class="imgStandby" id="Rot8"></a> 
+    <a href="_images/pictures/Sensorial-Cylinder_Blocks_high.jpg" data-lightbox="image-9" class="imgStandby" id="Rot9"></a> 
+    <a href="_images/pictures/Sensorial-Color_Box_1_high.jpg" data-lightbox="image-10" class="imgStandby" id="Rot10"></a> 
+    <a href="_images/pictures/Math-Sandpaper_numbers_high.jpg" data-lightbox="image-11" class="imgStandby" id="Rot11"></a>       
+    <a href="javascript:void(0)" id="LButton"></a> 
+    <a href="javascript:void(0)" id="RButton"></a> 
+    </div>
+    <h2>What’s the Montessori Difference?</h2>
+    <h3>Statistics prove that children who have their foundations of learning rooted in the 
+      Montessori philosophy are better equipped to succeed in life as they are self motivated, and possess strong reasoning skills and are able to solve to complex problems using a structured and organized approach.</h3>
+    <a href="about.html" class="buttonStyle" id="homeLearn">LEARN MORE</a>  
+  </article>
+  <aside id="homeAside">
+    <h2>SUMMER CAMP REGISTRATION HAS OPENED!</h2>
+    <h3>From swimming lessons to kids cooking, The Wonder Years has everyhing ready for summer. 
+      To find out how your kids can learn and play click here to see our summer fun programs!</h3>
+    <a href="summer.html" class="buttonStyle" id="progSummer">EXPLORE SUMMER CAMPS</a>  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.1040781747192!2d-79.76720119332954!3d43.68759960535365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15bc0965f6d1%3A0xd9e99402f358c98b!2s49+David+St!5e0!3m2!1sen!2sca!4v1400951281608" width="305" height="180" frameborder="0" style="margin:50px 0 0 0;border:10px solid white;"></iframe>
+    <h3>The Wonder Years is located just one block north of Bramption Railway Station!</h3>
+    <h4>49 DAVID STREET, BRAMPTON<br>
+      TEL: 905 459 9219</h4>
+  </aside>
+</section>
+<footer>
+<div class="SIT"></div><span class="foot1">info@twy.ca</span><br><span class="foot2">905 459 9219</span>
+</footer>
+
+<script type="text/javascript">
+"use strict";
+
+var x = 11; 
+var y = 1;
+var z = 3;
+
+document.getElementById('LButton').addEventListener('click', rotateLeft);
+document.getElementById('RButton').addEventListener('click', rotateRight);
+
+function rotateLeft() {
+if(y == 1) {
+	clearClass(); 
+document.getElementById('Rot' + x).className = 'imgLeft';
+document.getElementById('Rot1').className = 'imgCenter';
+document.getElementById('Rot2').className = 'imgRight';
+y = x;
+z = 2;
+testClass();
+}
+else if(y == x) {
+	clearClass(); 
+document.getElementById('Rot' + (x-1)).className = 'imgLeft';
+document.getElementById('Rot' + x).className = 'imgCenter';
+document.getElementById('Rot1').className = 'imgRight';
+y = x-1;
+z = 1;
+testClass();
+}
+else {  
+clearClass();  
+document.getElementById('Rot' + (y-1)).className = 'imgLeft';
+document.getElementById('Rot' + y).className = 'imgCenter';
+document.getElementById('Rot' + (y+1)).className = 'imgRight';
+y--;
+z = y+2;
+testClass();
+}
+};
+
+
+function rotateRight() {
+if(z == x) {   //Here, if we are at the end of the images, we rotate back to 1
+clearClass(); 
+document.getElementById('Rot1').className = 'imgRight';
+document.getElementById('Rot' + x).className = 'imgCenter';
+document.getElementById('Rot' + (x-1)).className = 'imgLeft';
+z = 1;
+y = x-1;
+testClass();
+}
+else if(z == 1) {
+	clearClass(); 
+document.getElementById('Rot2').className = 'imgRight';
+document.getElementById('Rot1').className = 'imgCenter';
+document.getElementById('Rot' + x).className = 'imgLeft';
+z = 2;
+y = x;
+testClass();
+}
+else { 
+clearClass(); 
+document.getElementById('Rot' + (z+1)).className = 'imgRight';
+document.getElementById('Rot' + z).className = 'imgCenter';
+document.getElementById('Rot' + (z-1)).className = 'imgLeft';
+z++;
+y = z-2;
+testClass();
+}
+};
+function clearClass() {
+for(var i=1; i<=x; i++) {
+	document.getElementById('Rot' + i).className = 'imgStandby';
+}
+};
+function testClass() {
+	for(var i=1; i<=x; i++) {
+		var testing = 'Rot' + i;
+		console.log(testing);
+		var testClass = document.getElementById(testing).className;
+			console.log(testClass);			
+}
+console.log("new click new click new click new click");
+};
+</script>
+</body>
+</html>

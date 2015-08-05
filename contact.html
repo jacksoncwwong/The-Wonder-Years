@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Wonder Years Montessori School</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="ContactTop"></div>
+<header>
+  <div id="ContactBG">
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="programs.html">PROGRAMS</a></li>
+        <!--<li><a href="summer.html">SUMMER CAMP</a></li>-->
+        <li><a href="blog/">BLOG</a></li>
+        <li><a href="contact.html" class="activePage">CONTACT US</a></li>
+      </ul>
+    </nav>    
+  </div>
+</header>
+<section id="ContactSection">
+<div id="ContactForm">
+<form action="http://www.twy.ca/webformmailer.php" method="post">
+<input type="hidden" name="subject" value="Submission" />
+<input type="hidden" name="redirect" value="thankyou.html" />  
+  <input type="text" name="first" placeholder="First Name" tabindex="10"/>
+  <input type="text" name="last" placeholder="Last Name" tabindex="20"/>
+  <input type="text" name="phone" placeholder="Phone Number" tabindex="30"/>
+  <input type="email" name="email" placeholder="Email" tabindex="40"/>  
+  <textarea name="message" id="message" placeholder="Your Message" tabindex="50"></textarea>
+  <input type="submit" id="submit" class="buttonStyle" tabindex="60" name="submit" value="submit"/>
+  <input type="hidden" name="form_order" value="alpha"/>
+</form>
+</div>
+<div id="contactText">
+<h2>Have a question?<br>Ask away!</h2>
+<h3>Ask us anything! We'll get back to you within<br>24 hours! Or feel free to give us a ring!</h3>
+</div>
+</section>
+<footer>
+<div class="SIT"></div><span class="foot1">info@twy.ca</span><br><span class="foot2">905 459 9219</span>
+</footer>
+</body>
+</html>
